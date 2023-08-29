@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sai vyjayanthi's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .nav navbar-nav {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        .bgimage {
+            height: 100vh;
+            background: url('images.jpeg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width:100%;
+            position: relative;
+        }
+
+        /* text css above hero image*/
+        .hero_title {
+            font-size: 4.5rem;
+            color: #1C282E;
+        }
+
+        .hero_desc {
+            font-size: 2rem;
+            color: #1C282E;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #1C282E;
+        }
+
+        .imageAboutPage {
+            width: 100%;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+
+        .card:hover .servicesIcon {
+            color: #008000;
+        }
+
+        .servicesText:hover {
+            border: 1px solid #008000;
+        }
+
+        .btn btn-success mt-3 {
+            position: relative;
+        }
+
+        .social-icons {
+            font-size: 36px;
+            cursor: pointer;
+        }
+
+        .fa-facebook:hover,
+        .fa-instagram:hover,
+        .fa-twitter:hover,
+        .fa-linkedin:hover,
+        .fa-twitch:hover {
+            color: #008000;
+        }
+
+        .fab {
+            color: #000000;
+        }
+
+        /* footer styling */
+        #footer {
+            background-color: #ADD8E6;
+            text-align: center;
+        }
+
+        #about,
+        #services,
+        #accomplishments,
+        #contact {
+            margin-top: 4rem;
+            padding-top: 4rem;
+        }
+
+        #contact {
+            padding-bottom: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color:black;font-style:cursive;" href="#"><b>sai vyjayanthi</b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="h1" style="color:#1C282E;" href="#home"><b>Home</b></a></li>
+                    <style>
+                        #h1:hover {
+                            background-color: #ADD8E6;
+                        }
+
+                        #h1:active {
+                            background-color: aqua;
+                        }
+                    </style>
+                    <li><a id="h2" style="color:#1C282E;" href="#about"><b>About</b></a></li>
+                    <style>
+                        #h2:hover {
+                            background-color: #ADD8E6;
+                        }
+
+                        #h2:active {
+                            background-color: aqua;
+                        }
+                    </style>
+                    <li><a id="h3" style="color:#1C282E;;" href="#accomplishments"><b>Accomplishments</b></a></li>
+                    <style>
+                        #h3:hover {
+                            background-color: #ADD8E6;
+                        }
+
+                        #h3:active {
+                            background-color: aqua;
+                        }
+                    </style>
+                    <li><a id="h4" style="color:#1C282E;;" href="#projects"><b>projects</b></a></li>
+                    <style>
+                        #h4:hover {
+                            background-color: #ADD8E6;
+                        }
+
+                        #h4:active {
+                            background-color: aqua;
+                        }
+                    </style>
+                    <li><a id="h6" style="color:#1C282E;;" href="#contact"><b>Contact</b></a></li>
+                    <style>
+                        #h6:hover {
+                            background-color: #ADD8E6;
+                        }
+
+                        #h6:active {
+                            background-color: aqua;
+                        }
+                    </style>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h3 class="hero_title"><strong><i>Hi, it's me sai vyjayanthi</i></strong></h3>
+                    <p class="hero_desc"><b><i>Computer science student</i></b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center" style="color:#1C282E;background-color: #ADD8E6;padding:6px;"><b>Know Me..</b></h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="sai.png" class="imageAboutPage" alt=".">
+                </div>
+                <div class="col-lg-8">
+                    <p>
+                        I am a motivated and skilled developer with a passion for creating innovative solutions. With
+                        experience in a variety of programming languages and technologies, I am equipped to tackle bring
+                        ideas to life. When I'm not coding I explore new ways to improve my skills.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul style="list-style-type:none;">
+                                <li><b>Name</b> : Avuthu Sai vyjayanthi</li>
+                                <li><b>Age</b> : 20</li>
+                                <li><b>Education</b> : B-Tech(CSE)Student</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <h4 style="background-color: #ADD8E6;padding:2px;"><b>Things I like to do regarding professional
+                                growth</b></h4>
+                        <ul>
+                            <li>Exploring new Technologies in free time.</li>
+                            <li>Trying to create new styles to elements.</li>
+                            <li>Google User-Interaction technologies</li>
+                            <li>Meta Front-End technologies</li>
+                        </ul>
+                        <h4 style="background-color: #ADD8E6;padding:2px;"><b>My Hobbies</b></h4>
+                        <ul>
+                            <li>series and movies I like.</li>
+                            <li>Reading books when bored.</li>
+                            <li>Watching anime, movies, series etc..</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="accomplishments">
+        <div class="container mt-3">
+            <h1 class="text-center" style="color:#1C282E;">Accomplishments</h1>
+            <div class="row">
+                <h2 style="color:#1C282E;background-color:#ADD8E6;padding:3px;"><b>Courses</b></h2>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="mm.PNG" alt="Card image" style="width:20%;">
+                        <div class="card-body">
+                            <h4 class="card-title">Introduction to HTML5</h4>
+                            <div class="text-center">
+                                <a href="
+                            https://coursera.org/share/ccbcc6ca8feab8a046e89b6308e88936"
+                                    class="btn btn-success">View Certificate</a>
+                            </div>
+                            <h4 class="card-title">Introduction to CSS3</h4>
+                            <div class="text-center">
+                                <a href="
+                        https://coursera.org/share/9fb3cb0819275b02483137e9e40dfba4"
+                                    class="btn btn-success">View Certificate</a>
+                            </div>
+                            <h4 class="card-title">SQL for Data science</h4>
+                            <div class="text-center">
+                                <a href="
+                        https://coursera.org/share/b7d16c744e9bd1a27a07fae0b1c54a98"
+                                    class="btn btn-success">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2 style="color:#1C282E; background-color:#ADD8E6;padding:3px;"><b>Badges</b></h2>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="p.PNG" alt="Card image" style="width:20%;">
+                        <div class="card-body">
+                            <br>
+                            <h4 class="card-title">Introduction to programming using Python</h4>
+                            <p class="card-text">
+                            <p><b> Skills and knowledge to recognize and write syntactically correct Python code,
+                                    recognize data types supported by Python, and the ability to recognize and write
+                                    Python code that will logically solve a given problem keeping complexity of the
+                                    problem in mind.</b><br>Take a look over my badge.</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="pp.png" alt="Card image" style="width:20%;">
+                        <div class="card-body">
+                            <h4 class="card-title">Pearson Mepro Level-10 Expert</h4>
+                            <p class="card-text"><b>(i) successfully interact with full fluency that makes regular
+                                    interaction in English equivalent to native-like speech <br>(ii) produce coherent
+                                    text with appropriate cohesive devices; develops wide range of topics fully and
+                                    completely.<br>This badge is achieved from a skill test.</b><br>Take a look over my
+                                badge.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2 style="color:#1C282E;background-color:#ADD8E6;padding:3px;"><b>Internships</b></h2>
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="s.jpeg" alt="Card image" style="width:20%;">
+                        <div class="card-body">
+                            <br>
+                            <h4 class="card-title">Salesforce Developer Virtual Internship</h4>
+                            <p class="card-text"><b>My first internship and I had hands on experience with the company's
+                                    way of handling things.</b><br>Take a look over my verified salesforce_certificate.
+                            </p>
+                            <br>
+                            <div class="text-center">
+                                <a href="https://smartinternz.com/internships/salesforce_certificates/161eef2abeb0574e9a8d4e14effea38c
+                            " class="btn btn-success">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+        <section id="contact">
+            <div class="col-sm-12" style="background-color: #ADD8E6;">
+                <h1 class="text-center" style="color:#1C282E;">Contact</h1>
+                <br>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name"><br>
+                        <input type="email" class="form-control mt-3" placeholder="Email"><br>
+                        <input type="text" class="form-control mt-3" placeholder="Subject"><br>
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text"
+                                placeholder="Project Details"></textarea><br>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container-fluid">
+                <!-- social media icons -->
+                <div class="social-icons mt-4">
+                    <a href="https://www.instagram.com/" target="_self"><i class="fa fa-instagram"></i></a>
+                    <a href="
+            https://twitter.com/Bhavya627" target="_self"><i class="fa fa-twitter"></i></a>
+                    <a href="
+            https://linkedin.com/in/bhavya627" target="_self"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
